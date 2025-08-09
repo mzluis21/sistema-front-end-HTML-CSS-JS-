@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAAW</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/download.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+
+    <div class="pré-header">
+        <h1 id="title">Repeita sua batida</h1>
+        <nav id="desktop-nav">
+            <ul>
+                <li><a href="#">Blog <span class="barra-vertical">|</span></a></li>
+                <li><a href="#">Central de ajuda <span class="barra-vertical">|</span></a></li>
+                <li><a href="#">Assistência Técnica <span class="barra-vertical">|</span></a></li>
+                <li><a href="#">Contato <span class="barra-vertical">|</span></a></li>
+                <li><a href="#">Instituto Alok</a></li>
+            </ul>
+        </nav>
+      
+    </div>
+
+    <header id="header">
+        <div class="image">
+            <img src="./img/Logo-Waaw.svg" alt="logo-waaw">
+        </div>
+
+        <nav id="nav">
+            <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><span id="hamburger"></span></button>
+
+            <ul id="menu">
+                <li><a href="#" id="openMenuModal">Fones de ouvido<i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#" id="openModalBtn">Caixa de Som <i class="fas fa-chevron-down"></i></a></li>
+            </ul>
+
+            <div class="menu-overlay" id="menuOverlay"></div>
+            <!-- Modal estilo mega menu -->
+            <div id="menuModal" class="menu-modal">
+                <div class="modal-content">
+                    <div class="left-column">
+                        <h3>Caixas de Som</h3>
+                        <a href="#">Portátil<i class="ri-arrow-right-s-line"></i></a>
+                        <a href="#">Bluetooth<i class="ri-arrow-right-s-line"></i></a>
+                        <a href="#">Torre<i class="ri-arrow-right-s-line"></i></a>
+                    </div>
+                    <div class="right-column">
+                        <img src="img/Novo_Projeto.jpg" alt="Imagem 1">
+                        <img src="img/desc_caixa-de-som-bluetooth-me-100sb_32.png" alt="Imagem 2">
+                        <div class="product">
+                            <img src="img/US-200SB-DUO-03_c5cd7f7f-935e-4e16-a6f0-3712d9be3398 (1).webp" alt="Produto">
+                            <p>Caixa de Som Bluetooth WAAW</p>
+                            <span>R$ 589,90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+               <div class="menu-overlay" id="menuOverlay"></div>
+                <!-- Modal estilo mega menu -->
+                <div id="menuModal" class="menu-modal">
+                    <div class="modal-content">
+                        <div class="left-column">
+                            <h3>Caixas de Som</h3>
+                            <a href="#">Portátil<i class="ri-arrow-right-s-line"></i></a>
+                            <a href="#">Bluetooth<i class="ri-arrow-right-s-line"></i></a>
+                            <a href="#">Torre<i class="ri-arrow-right-s-line"></i></a>
+                        </div>
+                        <div class="right-column">
+                            <img src="img/Novo_Projeto.jpg" alt="Imagem 1">
+                            <img src="img/desc_caixa-de-som-bluetooth-me-100sb_32.png" alt="Imagem 2">
+                            <div class="product">
+                                <img src="img/US-200SB-DUO-03_c5cd7f7f-935e-4e16-a6f0-3712d9be3398 (1).webp" alt="Produto">
+                                <p>Caixa de Som Bluetooth WAAW</p>
+                                <span>R$ 589,90</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+
+
+        <div class="icons">
+            <!-- Ícone de lupa (search) -->
+            <i class="ri-search-line"></i>
+            <!-- Ícone de usuário -->
+            <a href="login.html"><i class="ri-user-line"></i></a>
+            <!-- Ícone de carrinho -->
+            <i class="ri-shopping-cart-line"></i>
+        </div>
+    </header>
+
+    <div class="carrossel-banner">
+        <button class="seta esquerda">&#10094;</button> <!-- seta esquerda -->
+        
+        <div class="mensagem">
+            <span class="texto ativo">Compre sua WAAW by Alok de forma segura <a href="#">Saiba mais</a></span>
+            <span class="texto"><h1>Frete Grátis <span> Para compras acima de R$199,99</span><a href="#">Consulte Regiões </a></h1></span>
+            <span class="texto"><h1> Parcelamento <span> em até 10x sem juros</span> </h1></span>
+        </div>
+        
+        <button class="seta direita">&#10095;</button> <!-- seta direita -->
+    </div>
+
+    <!-- propaganda -->
+    <div class="propagated">
+        <!-- Botões de controle -->
+        <input type="radio" name="radio-prop" id="prop1" checked>
+        <input type="radio" name="radio-prop" id="prop2">
+        <input type="radio" name="radio-prop" id="prop3">
+        <input type="radio" name="radio-prop" id="prop4">
+
+    <!-- Container de imagens -->
+    <div class="propagated-image" id="prop-container">
+        <div class="prop-slide">
+            <img src="img/07.2800x800-banner-principal-waaw-pix.webp" alt="image-01" class="img-desktop">
+            <img src="img/mobile/07.1200x1600-banners-site-waaw-2025.webp" alt="image-01" class="img-mobile">
+        </div>
+
+        <div class="prop-slide">
+            <img src="./img/banner-principal-waaw-hyperboom.webp" alt="image-02" class="img-desktop">
+            <img src="img/mobile/02.1200x1600-banners-site-waaw-2025.webp" alt="image-02" class="img-mobile">
+        </div>
+
+        <div class="prop-slide">
+            <img src="./img/05.2800x800-banner-principal-waaw-boom-200_.webp" alt="image-03" class="img-desktop">
+            <img src="img/mobile/04.1200x1600-banners-site-waaw-2025.webp" alt="image-03" class="img-mobile">
+        </div>
+        
+        <div class="prop-slide">
+            <img src="img/03.2800x800-banner-principal-waaw-mob-.webp" alt="image-04" class="img-desktop">
+            <img src="img/mobile/03.1200x1600-banners-site-waaw-2025_-_mob_500.webp" alt="image-04" class="img-mobile">
+       </div>
+    </div>
+
+    <!-- Navegação manual -->
+    <div class="manual-navigation">
+        <label for="prop1" class="manual-btn"></label>
+        <label for="prop2" class="manual-btn"></label>
+        <label for="prop3" class="manual-btn"></label>
+        <label for="prop4" class="manual-btn"></label>
+    </div>
+    </div>
+
+      <!-- Destaques -->
+    <div class="emphasis">
+        <h1>A WAAW respeita sua batida</h1>
+    </div>
+
+    <div class="emphasis-WAAW">
+        <h2>Destaques WAAW</h2>
+        <a href="#">Ver Todos<i class="ri-arrow-right-s-line"></i></a>
+    </div>
+    
+    <!-- destaque imagem  -->
+    <div class="emphasis-imagem">
+        <img id="imagem" src="img/01.500x706-banner-vitrine-site-waaw-2025.webp" alt="">
+        <!-- produtos -->
+        <div class="products" id="produtos">
+            
+            <div class="products-img">
+                <div class="div-imagem" data-hover="img/VIB-100EW-01.webp" data-leave="img/VIB-100EW-04.webp">
+                    <img src="img/VIB-100EW-04.webp" alt="">
+                </div>
+                
+                <h1>Fone de ouvido com fio WAAW VIB 100EW</h1>
+                <p>Fone de ouvido intra-auricular, com microfone integrado, conector P2, Hands Free.</p>
+                <span>R$ 69,90</span>
+            </div>
+        </div>
+        
+        
+        <div class="products">
+            <div class="products-img">
+                <div class="div-imagem" data-hover="./img/ENERGY-100EBG-03.webp" data-leave="./img/ENERGY-100EBG-01.webp">
+                    <img src="./img/ENERGY-100EBG-01.webp" alt="">
+                </div>
+                
+                <h1>Fone de ouvido gamer WAAW ENERGY 100EBG</h1>
+                <p>Fone de ouvido intra-auricular, TWS, até 13 horas de bateria, modo gamer, microfone embutido.</p>
+                <span>R$ 309,90</span>
+            </div>
+        </div>
+        
+        
+        <div class="products">
+            <div class="products-img">
+                <div class="div-imagem" data-hover="./img/MOB-100EB-05_3d6fab80-a941-43ee-98a9-090217ecc1a4.webp" data-leave="./img/MOB100EB-7899831310050-04.webp">
+                    <img src="./img/MOB100EB-7899831310050-04.webp" alt="">
+                </div>
+                <h1>Fone de ouvido bluetooth WAAW MOB 100EB</h1>
+                <p>Fone de ouvido intra-auricular, TWS, até 21 horas de bateria.</p>
+                <span>R$ 289,90</span>
+            </div>
+        </div>
+ 
+        
+            <div class="products">
+                <div class="products-img">
+                    <div class="div-imagem" data-hover="./img/SENSE-100HW-01.webp" data-leave="./img/SENSE-100HW-08 (1).webp">
+                        <img src="./img/SENSE-100HW-08 (1).webp" alt="">
+                    </div>
+                    <h1>Fone de ouvido com fio WAAW SENSE 100HW</h1>
+                    <p>Fone de ouvido Over Ear, microfone integrado, conector P3, Hands Free.</p>
+                    <span>R$ 169,90</span>
+                </div>
+               
+            </div>
+           
+            <div class="products">
+                <div class="products-img">
+                    <div class="div-imagem" data-hover="./img/pasta 2/US-100SB-02_0ec89c1f-1ee8-427c-abb0-3ad9fb705dbd.webp" data-leave="./img/pasta 2/US-100SB-03_7fa41e20-300a-486d-9ef7-815212770d37.webp">
+                        <img src="./img/pasta 2/US-100SB-02_0ec89c1f-1ee8-427c-abb0-3ad9fb705dbd.webp" alt="">
+                    </div>
+                    <h1>Caixa de som Bluetooth WAAW US 100SB</h1>
+                    <p>Caixa de som portátil, até 10 horas de bateria, proteção IPX6, TWS.</p>
+                    <span>R$ 335,92</span>
+                </div>
+            
+            </div>
+
+            <div class="products">
+                <div class="products-img">
+                    <div class="div-imagem" data-hover="./img/pasta 2/MOB-200EB-06_5d08fb57-0812-47e8-995a-e416dcf2b2d6.webp" data-leave="./img/pasta 2/MOB-200EB-13_bbca6033-3d60-40d4-a0f2-841d610ec5bb (1).webp">
+                        <img src="./img/pasta 2/MOB-200EB-06_5d08fb57-0812-47e8-995a-e416dcf2b2d6.webp" alt="">
+                    </div>
+                    <h1>Fone de ouvido bluetooth WAAW MOB 200EB</h1>
+                    <p>Fone de ouvido auricular, TWS, até 16 horas de bateria, modo gamer.</p>
+                    <span>R$ 419,90</span>
+                </div>
+            </div>
+            
+
+    </div>  <!-- termina a div emphasis  -->
+
+    <div class="grid-destaque">
+        <div class="item item-grande">
+            <img src="img/pasta 2/01.1500x1523-banner-categorias-infinite-200.webp" alt="Caixa de som Bluetooth Infinite200">
+        </div>
+
+        
+        <div class="item item-pequeno">
+             <img src="img/pasta 2/02.700x583-banner-categorias-fones-de-ouvido.webp" alt="Fone de ouvido">
+        </div>
+
+        <div class="item item-pequeno">
+            <img src="img/pasta 2/02.700x583-banner-categorias-caixas-de-som.webp" alt="Caixa de som">
+        </div>
+
+    </div>
+
+    <div class="newsletter-container">
+        <div class="banner-news">
+            <img src="img/pasta 2/01.Banners-site-waaw-news_fa9bf7f9-dd18-4c49-b411-d1d322d3a7db.webp" alt="Respeita sua batida - WAAW by ALOK">
+        </div>
+
+        <div class="form-newsletter">
+            <i class="icon-newsletter">📧</i>
+            <h2>Newsletter</h2>
+            <p>Faça parte do clube WAAW e ganhe 10% de desconto na sua primeira compra.</p>
+            <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <button type="submit">Enviar</button>
+            </form>
+            <small>Concordo em receber a newsletter e aceito a política de privacidade.</small>
+        </div>
+
+    </div>
+
+
+        <section class="cards-info">
+            <div class="card">
+                <i class="ri-headphone-line"></i>
+                <h3>Atendimento ao Cliente</h3>
+                <p>24 horas por dia, todos os dias, inclusive em feriados e finais de semana, pelo WhatsApp!</p>
+                <a href="#">Chamar no Whats</a>
+            </div>
+
+            <div class="card">
+                <i class="ri-lock-line"></i>
+                <h3>Pagamento Seguro</h3>
+                <p>Cartão de Crédito, Pix e Boleto</p>
+                <a href="#">Acessar</a>
+            </div>
+    </section>
+
+        <footer class="footer">
+            <div class="logo-footer">
+                <img src="img/Logo-Waaw.svg" alt="WAAW">
+            </div>
+
+            <div class="footer-grid">
+                <div class="footer-col">
+                <h4>Fone de ouvidos</h4>
+                <ul>
+                    <li>Vib 100</li>
+                    <li>Energy 10</li>
+                    <li>Mob 100</li>
+                    <li>Mob 200</li>
+                    <li>Mob 500ANC</li>
+                    <li>Energy 100</li>
+                    <li>Move 100</li>
+                    <li>Sense 100</li>
+                    <li>Sense 200</li>
+                    <li>Sense 300</li>
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Caixas de Som</h4>
+                <ul>
+                    <li>Boom 100</li>
+                    <li>Boom 200</li>
+                    <li>Hyperboom 1000</li>
+                    <li>Infinite 100</li>
+                    <li>Infinite 200</li>
+                    <li>Infinite 700</li>
+                    <li>Infinite 1000</li>
+                    <li>Me 100</li>
+                    <li>Us 100</li>
+                    <li>Us 200 Duo</li>
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Institucional</h4>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Minha Conta</li>
+                    <li>Meus Pedidos</li>
+                    <li>Política de Privacidade</li>
+                    <li>ESG</li>
+                    <li>Regulamento Meu Kit WAAW</li>
+                    <li>Certificado de Autorização</li>
+                    <li>Regulamento - No Drop</li>
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Dúvidas</h4>
+                <ul>
+                    <li>Meus pedidos</li>
+                    <li>Troca e Devoluções</li>
+                    <li>Política de Entrega</li>
+                    <li>Código de Defesa do Consumidor</li>
+                    <li>Direito de Arrependimento</li>
+                    <li>Termos e Condições</li>
+                </ul>
+                </div>
+
+                <div class="footer-col">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><i class="ri-phone-line"></i> (41)3012-7282</li>
+                    <li><i class="ri-mail-line"></i> ajuda@waaw.com.br</li>
+                    <li><i class="ri-headphone-line"></i> Atendimento 24h WhatsApp</li>
+                </ul>
+                <h4>Conecte-se com a gente</h4>
+                <div class="social-icons">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-instagram-line"></i>
+                    <i class="ri-youtube-line"></i>
+                    <i class="ri-tiktok-fill"></i>
+                </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="selos">
+
+                </div>
+
+                <div class="parceiros">
+                <p>Parceiros</p>
+                <img src="img/logo-wap-preta.webp" alt="wap-preta.">
+                <img src="img/alok.svg" alt="Alok">
+                </div>
+
+                <div class="pagamentos">
+                <p>Métodos de pagamento</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                © Copyright 2023 - WAAW | Todos os Direitos Reservados.
+            </div>
+    </footer>
+    
+      <!-- cursor -->
+     <div class="cursor"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>

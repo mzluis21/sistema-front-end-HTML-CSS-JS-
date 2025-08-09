@@ -1,0 +1,373 @@
+
+/* MOBILE maiores */
+@media (max-width: 764px) {
+
+    .pré-header{
+        display: none;
+
+    }
+
+
+    #desktop-nav{
+        display: none;
+    }
+
+    #header{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    .image img{
+        position: relative;
+        left: 80%;
+        width: 80%;
+    }
+
+    .icons .ri-search-line{
+        position: absolute;
+        right: 75%;
+    
+    }
+
+    .carrossel-banner{
+       top: 11%;
+    }
+
+    .texto{
+        font-size: 0.4rem;
+        flex-direction: column;
+    }
+
+    .texto h1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .barra-vertical{
+        display: none;
+
+    }
+
+    .emphasis{
+        position: relative;
+        top: 15%;
+    }
+
+    .emphasis h1{
+        position: relative;
+        font-size: 2rem;
+        padding: 1rem;
+       
+        
+    }
+
+    .emphasis-WAAW{
+        flex-direction: column;
+        position: relative;
+        top: 14%;
+        right: 14%;
+    }
+
+    .emphasis-WAAW a{
+        gap: 20px;
+        position: relative;
+        right: 19%;
+        font-size: 1rem;
+    }
+
+    .emphasis-WAAW h2{
+        font-size: 1.8rem;
+        color: #292929;
+        font-weight: bolder;
+    }
+    .emphasis-imagem{
+        padding: 2rem;
+    }
+
+    .emphasis-imagem img {
+        width: 60%;
+        border-radius: 10px;
+        
+    }
+    
+    .prop-slide .img-desktop {
+        display: none;
+    }
+
+    .prop-slide .img-mobile {
+        display: block;
+    }
+
+    
+
+    .prop-slide .img-mobile {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* MOBILE + TABLET + DOBRÁVEIS (até 1100px) */
+@media (max-width: 1100px) {
+    #mobile-title{
+        padding:1rem;
+        border-bottom:0.5px solid rgba(67, 67, 67, 0.214) ;
+        color: #454545;
+        text-transform: capitalize;
+        
+    }
+
+    #mobile-nav{
+        position: relative;
+        top: 40%;
+        left: 1%;
+       
+    }
+
+    #mobile-nav li a{
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
+
+
+    #mobile-nav .barra-vertical{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: rgb(228, 228, 228);
+        transition: 0.6s ease-in-out;
+        z-index: -1;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    
+    }
+
+    #menu li a {
+        padding: 0.9rem;
+        margin: 0.5rem 0.5rem;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        text-transform: capitalize;
+    }
+
+    #menu li a:hover{
+        color: rgb(116, 116, 116);
+    }
+
+    #menu li a::after {
+        background-color: #000000;
+     }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #mobile-btn {
+        justify-content: center;
+        padding: 1rem;
+        position: static;
+        right: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    #mobile-btn .btn-login button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+    }
+
+    .propagated{
+        position: relative;
+        top: 11%;
+
+    }
+
+    .grid-destaque {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .item-grande {
+        grid-row: auto;
+    }
+
+    .newsletter-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    .banner-news {
+            flex: 1 1 55%;
+    }
+
+    .form-newsletter {
+            flex: 1 1 40%;
+            padding: 1.5rem;
+    }
+
+    .texto-banner {
+            font-size: 1.5rem;
+            bottom: 15px;
+            left: 15px;
+    }
+
+    .texto-banner span {
+            font-size: 1.2rem;
+    }
+
+    .form-newsletter h2 {
+            font-size: 1.2rem;
+    }
+
+    .form-newsletter p {
+            font-size: 0.9rem;
+    }
+
+    .form-newsletter input,
+    .form-newsletter button {
+            padding: 8px;
+            font-size: 0.9rem;
+    }
+
+  .form-newsletter small {
+        font-size: 0.7rem;
+  }
+}
+
+
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+#header {
+    position: sticky;
+    top: 0;
+}
+
+  .pré-header h1{
+    display: none;
+}
+
+ .icons{
+    position: relative;
+    left: 10%;
+    font-size: 25px;
+}
+
+.image img {
+    position: relative; 
+    left: 180%;
+}
+
+
+
+.mensagem{
+    font-size: 0.9rem;
+}
+
+
+.propagated{
+    position: relative;
+    top: 0;
+
+}
+
+
+
+.emphasis h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.emphasis-WAAW{
+    flex-direction: column;
+    position: relative;
+    right: 19%;
+}
+
+.emphasis-WAAW a{
+    gap: 20px;
+    position: relative;
+    right: 23%;
+    font-size: 1rem;
+}
+
+
+
+.emphasis-WAAW h2{
+    font-size: 2.5rem;
+    color: #292929;
+    font-weight: bolder;
+    position: relative;
+    right: 7%;
+}
+
+
+}
+
+/*tablet menores*/
+@media (min-width: 768px){
+    .carrossel-banner{
+        height: 50px;
+    }
+
+
+}
+
+

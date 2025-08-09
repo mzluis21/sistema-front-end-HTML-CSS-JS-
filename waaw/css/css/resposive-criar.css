@@ -1,0 +1,235 @@
+/*responsividade*/
+
+/* MOBILE maiores */
+@media (max-width: 764px) {
+
+    .pré-header{
+        display: none;
+    }
+
+    #header{
+        position: fixed;  
+        width: 100%;
+        z-index: 999;
+        left: 0;
+        top: 0;
+    }
+
+    .image img{
+        position: relative;
+        left: 80%;
+        width: 80%;
+    }
+
+    .icons .ri-search-line{
+        position: absolute;
+        right: 75%;
+    
+    }
+
+    .carrossel-banner{
+       top: 15%;
+    }
+
+    .texto{
+        font-size: 0.4rem;
+        flex-direction: column;
+    }
+
+    .texto h1{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .barra-vertical{
+        display: none;
+
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .container{
+        max-width: 600px;  /* igual à imagem */
+        min-height: 700px; /* para garantir o mesmo espaço visual */
+    }
+
+    form input{
+        width: 300px;
+    }
+
+}
+
+/* MOBILE + TABLET + DOBRÁVEIS (até 1100px) */
+@media (max-width: 1100px) {
+    .container{
+        background-color: #dbdbdb;
+    }
+
+    #mobile-title{
+        padding:1rem;
+        border-bottom:0.5px solid rgba(67, 67, 67, 0.214) ;
+        color: #454545;
+        text-transform: capitalize;
+        
+    }
+
+    #mobile-nav{
+        position: relative;
+        top: 40%;
+        left: 1%;
+       
+    }
+
+    #mobile-nav li a{
+        font-size: 0.8rem;
+        font-weight: lighter;
+    }
+
+
+    #mobile-nav .barra-vertical{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0;
+        background-color: rgb(228, 228, 228);
+        transition: 0.6s ease-in-out;
+        z-index: -1;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu{
+        border-bottom:0.5px solid rgba(67, 67, 67, 0.214) ;
+    }
+
+    #menu li a {
+        padding: 0.9rem;
+        margin: 0.5rem 0.5rem;
+        color: rgb(0, 0, 0);
+        
+    }
+
+    #menu li a:hover{
+        color: rgb(116, 116, 116);
+    }
+
+    #menu li a::after {
+        background-color: #000000;
+     }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: 0.3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+    #mobile-btn {
+        justify-content: center;
+        padding: 1rem;
+        position: static;
+        right: 0;
+        display: flex;
+        gap: 20px;
+    }
+
+    #mobile-btn .btn-login button {
+        width: 100%;
+        text-align: center;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+    }
+
+    .propagated{
+        position: relative;
+        top: 11%;
+
+    }
+
+}
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pré-header h1{
+    display: none;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+}
+
+ .icons{
+    position: relative;
+    left: 10%;
+    font-size: 25px;
+}
+
+   .image img {
+        position: relative; 
+        left: 180%;
+    }
+    .carrossel-banner{
+       top: 7%;
+    }
+
+    .mensagem{
+      font-size: 0.9rem;
+    }
+
+
+    .propagated{
+        position: relative;
+        top: 7%;
+
+    }
+
+}
